@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "lib.android.components"
+    namespace = "lib.notifications"
     compileSdk = Configs.compileSdk
 
     defaultConfig {
