@@ -10,6 +10,8 @@ class NotificationParams(val notificationId: Int, @DrawableRes var smallIcon: In
     var contentText: CharSequence? = null
     private var priority: Int = NotificationCompat.PRIORITY_DEFAULT
     var cancelable: Boolean = true
+    var vibroPattern: LongArray? = null
+    var isSoundAllowed: Boolean = true
 
     fun priority() = priority
 

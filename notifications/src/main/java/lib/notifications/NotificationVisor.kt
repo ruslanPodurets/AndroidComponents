@@ -42,6 +42,11 @@ object NotificationVisor {
         if(params.smallIcon != 0){
             builder.setSmallIcon(params.smallIcon)
         }
+        if (params.vibroPattern != null) {
+            builder.setVibrate(params.vibroPattern)
+        } else if (!params.isSoundAllowed) {
+            builder.setSilent(true)
+        }
         builder.setContentTitle(params.title)
         builder.setContentText(params.contentText)
         builder.priority = params.priority()
